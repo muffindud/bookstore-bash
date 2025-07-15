@@ -1,5 +1,5 @@
-# URL="https://demoqa.com/BookStore/v1/Books"
-# curl -X 'GET' $URL > response.json
+URL="https://demoqa.com/BookStore/v1/Books"
+curl -X 'GET' $URL > response.json
 
 books_len=$(jq '.books | length' response.json)
 
